@@ -26,6 +26,8 @@ pnpm lint
 pnpm typecheck
 ```
 
+See [docs/npm-publishing-setup.md](docs/npm-publishing-setup.md) for the full bootstrap story, troubleshooting, and what we did to get the first publish working.
+
 ## Release flow (Changesets)
 
 1. Make changes under `packages/market`.
@@ -77,8 +79,6 @@ Trusted publishing requires a **public GitHub repository** for provenance.
    - if changesets are pending → opens/updates a **Version Packages** PR
    - if the Version Packages PR was just merged → runs `pnpm release` and publishes to npm with provenance
 5. Merge the Version Packages PR when ready to release.
-
-The pending changeset at `.changeset/initial-market-release.md` will produce `@bsgrigorov/npm-start-market@0.1.0` on the first release merge.
 
 ### 4. Verify publish
 
