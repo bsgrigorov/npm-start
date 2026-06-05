@@ -1,6 +1,6 @@
 {
   "name": "@bsgrigorov/npm-start-market",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Fetch market quotes from Yahoo Finance",
   "type": "module",
   "license": "MIT",
@@ -15,7 +15,9 @@
       "import": "./dist/index.js"
     }
   },
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "tsup",
     "lint": "eslint .",
